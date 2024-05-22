@@ -1,0 +1,20 @@
+﻿@model PersonModel
+<h1>THÔNG TIN ĐĂNG KÝ</h1>
+<form method="post" asp-action="XuLy" enctype="multipart/form-data">
+    <div class="form-group">
+        <label>Họ Tên</label>
+        <input asp-for="FullName" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Ngày sinh</label>
+        <input asp-for="BirthDay" type="date" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <label>Hình</label>
+        <input name="fHinh" type="file" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn badge-success">Đăng Ký</button>
+</form>
